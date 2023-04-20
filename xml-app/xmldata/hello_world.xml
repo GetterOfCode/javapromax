@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--注释，根标签有且仅能有一个-->
+<student>
+    <name>女儿国王</name>
+    <sex>女</sex>
+    <hobby>唐僧</hobby>
+    <info>
+        <age>28</age>
+        <add>女儿国</add>
+    </info>
+    <sql>
+        <!--< &lt;   小于号
+            > &gt;   大于号
+            & &amp;  和号
+            ' &apos; 单引号
+            " &quos; 双引号
+        -->
+        select * from user where age &lt; 18;
+        select * from user where age &lt;18 &amp;&amp; age &gt; 10;
+        <![CDATA[
+            select * from user where age < 18;
+        ]]>
+    </sql>
+</student>
